@@ -1,0 +1,189 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+
+}
+
+main {
+  height: 100%;
+  width: 100%;
+}
+.overlay{
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.63);
+}
+.page1 {
+  height: 100vh;
+  width: 100vw;
+background-image: url(rachel-coyne-U7HLzMO4SIY-unsplash.jpg);
+background-size: cover;
+background-position: bottom;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2vw 3vw;
+  align-items: center;
+  text-transform: uppercase;
+ 
+}
+
+.n-left {
+  width: 20vw;
+}
+.n-left h1{
+  font-size: 40px;
+  color: white;
+  font-weight: 400;
+}
+.n-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 65vw;
+}
+
+.n-right a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+}
+
+.login-reg {
+  display: flex;
+  gap: 1vw;
+}
+
+.login-reg button,
+.n-right button {
+  padding: 15px 35px;
+  font-size: 25px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  background-color: rgba(92, 92, 92, 0.89);
+  border: none;
+border-radius: 15px;
+}
+.container{
+ display: flex;
+ flex-direction: column;
+ height: 85vh;
+ align-items: center;
+ text-transform: uppercase;
+ padding: 4vw;
+ color: white;
+ font-weight: 400;
+}
+.container h1{
+
+  padding-top: 2vw;
+  font-size: 90px;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+ 
+}
+button{
+  cursor: pointer;
+}
+.container p{
+  font-size: 30px;
+text-align: center;
+padding: 2vw 2vw;
+line-height: 1.5;
+}
+.tickets-btn{
+  display: flex;
+ 
+  gap: 1vw;
+}
+.tickets-btn button{
+  padding: 15px 35px;
+  border: none;
+  font-size: 30px;
+  text-transform: uppercase;
+  background-color: rgba(92, 92, 92, 0.89);
+  color: white;
+  border-radius: 15px;
+}
+.search-event{
+  margin-top: 4vw;
+}
+.search-event h1  {
+  font-size:50px;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 2px;
+}
+form{
+  display: flex;
+gap: 1vw;
+  border-radius: 15px;
+  margin-top: 2vw;
+  
+}
+form input{
+  width: 13vw;
+  padding: 1vw 2vw;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(92, 92, 92, 0.89);
+  border-radius: 15px;
+font-size: 30px;
+letter-spacing: 2px;
+font-weight: 400;
+outline: 1px solid white;
+border: none;
+
+text-transform: uppercase;
+}
+form input::placeholder{
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+#city{
+  width: 16vw;
+}
+form button{
+  height: 2vw;
+  width: 6vw;
+  border: none;
+  margin-top: 1vw;
+  font-size: 25px;
+  text-transform: uppercase;
+  background-color: rgba(92, 92, 92, 0.89);
+  color: white;
+  border-radius: 15px;
+  margin-left: 2vw;
+
+}
+#dateInput {
+  
+}
+.custom-date::before {
+  content: "Choose date";
+  color: #888;
+  position: absolute;
+  pointer-events: none;
+  padding: 8px;
+  font-size: 16px;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+.custom-date:focus::before {
+  display: none;
+}
+
+.custom-date:valid::before {
+  display: none;
+}
